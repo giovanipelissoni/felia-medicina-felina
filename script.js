@@ -107,11 +107,10 @@ function initNeighborhoodChips() {
 
       const bairro = chip.getAttribute('data-bairro') || chip.textContent.trim();
 
-      if (bairro === 'Outro') {
-        feedbackText.innerHTML = `<strong>Outro Bairro ou Cidade:</strong> Atendemos sob consulta de rota. Entre em contato pelo WhatsApp para verificar disponibilidade de encaixe no dia!`;
-      } else if (bairro === 'Zona Norte SP') {
-        feedbackText.innerHTML = `<strong>Zona Norte de São Paulo (Santana, Tucuruvi, Jaçanã):</strong> Rota confirmada para consultas domiciliares e cat sitting!`;
-        if (bairroInput) bairroInput.value = 'Zona Norte (SP)';
+      if (bairro === 'Outro' || bairro === 'Zona Norte SP' || bairro === 'Zona Leste SP') {
+        const regiao = bairro === 'Outro' ? 'Outro Bairro ou Região' : (bairro === 'Zona Norte SP' ? 'Zona Norte de São Paulo' : 'Zona Leste de São Paulo');
+        feedbackText.innerHTML = `<strong>${regiao}:</strong> Atendemos sob consulta de rota. Entre em contato pelo WhatsApp para verificar disponibilidade de encaixe no dia!`;
+        if (bairroInput) bairroInput.value = bairro === 'Outro' ? 'Outro Bairro' : bairro;
       } else {
         feedbackText.innerHTML = `<strong>${bairro} (Guarulhos):</strong> Rota prioritária diária para consultas veterinárias e visitas de cat sitting!`;
         if (bairroInput) bairroInput.value = bairro;

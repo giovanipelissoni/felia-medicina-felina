@@ -2112,6 +2112,16 @@ input, select, textarea {
   flex-shrink: 0;
 }
 
+.footer-detail-item a {
+  color: #94A3B8;
+  transition: color var(--transition-fast);
+}
+
+.footer-detail-item a:hover {
+  color: var(--color-blush);
+  text-decoration: underline;
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 1.25rem 0;
@@ -2202,4 +2212,10 @@ input, select, textarea {
 .dock-btn-agendar {
   background-color: var(--color-petrol);
   color: #FFFFFF;
+}
+
+
+/* Italic Title from PDF request */
+.italic-title {
+  font-style: italic !important;
 }
