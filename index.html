@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>FELIA - Medicina Felina & Cat Sitting Domiciliar | Guarulhos e SP</title>
+  <meta name="description" content="Atendimento veterinário domiciliar exclusivo para felinos e cat sitting profissional em Guarulhos e São Paulo com a Dra. Gabriella Paiva e Giovana Madureira. Cuidado Cat Friendly sem estresse.">
+  <meta name="keywords" content="veterinário a domicílio guarulhos, medicina felina são paulo, cat sitter guarulhos, veterinária especialista em felinos guarulhos, consulta felina domiciliar, felia medicina felina">
+  
+  <!-- Mobile Browser Meta -->
+  <meta name="theme-color" content="#28536B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FELIA - Medicina Felina & Cat Sitting Domiciliar">
+  <meta property="og:description" content="Manejo Cat Friendly no conforto do seu lar em Guarulhos e São Paulo. Consultas, vacinas, exames e cat sitting com olhar veterinário.">
+  <meta property="og:image" content="assets/logo-card.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo-transparent.png">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar (Compact on Mobile) -->
+  <div class="top-banner">
+    <div class="container banner-content">
+      <span class="banner-badge">Guarulhos & SP</span>
+      <p class="banner-text">Atendimento Domiciliar 100% Cat Friendly 🐾</p>
+      <a href="#agendamento" class="banner-link">Agendar &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation (Optimized for Mobile) -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" aria-label="FELIA Medicina Felina">
+        <img src="assets/logo-transparent.png" alt="FELIA Medicina Felina Logo" class="header-logo-img">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav" aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+          <li><a href="#diferenciais" class="nav-link">Por Que em Casa?</a></li>
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#regioes" class="nav-link">Regiões</a></li>
+          <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+          <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20da%20FELIA!" target="_blank" rel="noopener noreferrer" class="btn btn-wa-header" aria-label="WhatsApp">
+          <i data-lucide="message-circle" class="btn-icon"></i>
+          <span class="desktop-only-inline">WhatsApp</span>
+        </a>
+        <a href="#agendamento" class="btn btn-primary header-cta-btn desktop-only">
+          <i data-lucide="calendar" class="btn-icon"></i>
+          <span>Agendar</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu">
+          <i data-lucide="menu" id="menuIcon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-inner">
+        <ul class="mobile-links">
+          <li><a href="#inicio" class="mobile-link"><i data-lucide="home"></i> Início</a></li>
+          <li><a href="#diferenciais" class="mobile-link"><i data-lucide="shield-check"></i> Por Que em Casa?</a></li>
+          <li><a href="#sobre" class="mobile-link"><i data-lucide="user"></i> Sobre a Equipe</a></li>
+          <li><a href="#servicos" class="mobile-link"><i data-lucide="briefcase"></i> Nossos Serviços</a></li>
+          <li><a href="#regioes" class="mobile-link"><i data-lucide="map-pin"></i> Regiões (Guarulhos/SP)</a></li>
+          <li><a href="#depoimentos" class="mobile-link"><i data-lucide="star"></i> Depoimentos</a></li>
+          <li><a href="#faq" class="mobile-link"><i data-lucide="help-circle"></i> Dúvidas Frequentes</a></li>
+        </ul>
+
+        <div class="mobile-nav-footer">
+          <a href="#agendamento" class="btn btn-primary btn-block btn-lg" onclick="closeMobileNav()">
+            <i data-lucide="calendar-heart"></i> Solicitar Agendamento
+          </a>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Felia." target="_blank" rel="noopener noreferrer" class="btn btn-wa-full btn-block">
+            <i data-lucide="message-circle"></i> Conversar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-pattern-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="tag-dot"></span>
+          <span>Atendimento Domiciliar &bull; Guarulhos e SP</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Medicina Felina & Cat Sitting no <span class="highlight-serif">conforto do seu lar</span>
+        </h1>
+        
+        <p class="hero-description">
+          Diga adeus ao trauma da caixinha de transporte e das clínicas agitadas. Cuidados veterinários especializados e cat sitting com formação clínica, no ambiente onde seu gato se sente seguro.
+        </p>
+
+        <!-- CTAs Principais (Otimizados para toque móvel) -->
+        <div class="hero-cta-group">
+          <a href="#agendamento" class="btn btn-primary btn-hero-primary shadow-pulse">
+            <i data-lucide="calendar-heart" class="btn-icon"></i>
+            <span>Solicitar Agendamento</span>
+          </a>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Felia%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-hero-secondary">
+            <i data-lucide="message-circle" class="btn-icon"></i>
+            <span>Chamar no WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Quick Trust Pills (Scrolleable / adaptativo no celular) -->
+        <div class="hero-pills-row">
+          <div class="trust-pill">
+            <i data-lucide="cat"></i> 100% Cat Friendly
+          </div>
+          <div class="trust-pill">
+            <i data-lucide="stethoscope"></i> Dra. Gabriella (CRMV)
+          </div>
+          <div class="trust-pill">
+            <i data-lucide="heart"></i> Giovana Cat Sitter
+          </div>
+          <div class="trust-pill">
+            <i data-lucide="map-pin"></i> Foco Guarulhos
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual (Compact card on mobile, rich on desktop) -->
+      <div class="hero-visual">
+        <div class="hero-card-frame">
+          <div class="brand-hero-card">
+            <img src="assets/logo-card.png" alt="FELIA Medicina Felina" class="hero-brand-logo">
+            
+            <div class="hero-card-founders">
+              <div class="founder-mini-badge">
+                <div class="mini-avatar avatar-blue"><i data-lucide="stethoscope"></i></div>
+                <div>
+                  <strong>M.V. Gabriella Paiva</strong>
+                  <span>Médica Veterinária Felina</span>
+                </div>
+              </div>
+              <div class="founder-mini-badge">
+                <div class="mini-avatar avatar-pink"><i data-lucide="heart"></i></div>
+                <div>
+                  <strong>Giovana Madureira</strong>
+                  <span>Cat Sitter & Auxiliar Veterinária</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-card-features">
+              <div class="mini-feat">
+                <i data-lucide="home"></i>
+                <div>
+                  <strong>Consulta & Vacinas em Casa</strong>
+                  <p>Sem estresse para o paciente</p>
+                </div>
+              </div>
+              <div class="mini-feat">
+                <i data-lucide="sparkles"></i>
+                <div>
+                  <strong>Cat Sitting em Viagens</strong>
+                  <p>Cuidados com olhar técnico e amor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verificador Rápido de Bairros (Alta Conversão Mobile) -->
+  <section class="section neighborhood-checker-section">
+    <div class="container">
+      <div class="checker-card">
+        <div class="checker-header">
+          <div class="checker-icon-wrap">
+            <i data-lucide="map-pin"></i>
+          </div>
+          <div>
+            <h3>Consultar Atendimento no Meu Bairro</h3>
+            <p>Selecione seu bairro em Guarulhos para verificar rota:</p>
+          </div>
+        </div>
+        
+        <div class="bairros-chips" id="bairrosChips">
+          <button type="button" class="chip-btn active" data-bairro="Bosque Maia">Bosque Maia</button>
+          <button type="button" class="chip-btn" data-bairro="Centro">Centro</button>
+          <button type="button" class="chip-btn" data-bairro="Vila Augusta">Vila Augusta</button>
+          <button type="button" class="chip-btn" data-bairro="Macedo">Macedo</button>
+          <button type="button" class="chip-btn" data-bairro="Vila Galvão">Vila Galvão</button>
+          <button type="button" class="chip-btn" data-bairro="Gopoúva">Gopoúva</button>
+          <button type="button" class="chip-btn" data-bairro="Picanço">Picanço</button>
+          <button type="button" class="chip-btn" data-bairro="Cecap">Cecap</button>
+          <button type="button" class="chip-btn" data-bairro="Zona Norte SP">Zona Norte SP</button>
+          <button type="button" class="chip-btn" data-bairro="Outro">Outro Bairro</button>
+        </div>
+
+        <div class="checker-result" id="checkerResult">
+          <i data-lucide="check-circle-2" class="res-icon"></i>
+          <span id="checkerResultText">✅ <strong>Bosque Maia (Guarulhos):</strong> Atendemos com rota prioritária para consultas e cat sitting!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por Que Atendimento em Domicílio? -->
+  <section class="section differentials-section" id="diferenciais">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Bem-estar Felino</span>
+        <h2 class="section-title">Por que escolher o atendimento em casa?</h2>
+        <p class="section-subtitle">
+          Gatos são animais territorialistas e muito sensíveis a mudanças. Veja como o atendimento domiciliar protege o bem-estar do seu felino:
+        </p>
+      </div>
+
+      <div class="diff-grid">
+        <div class="diff-card">
+          <div class="diff-icon-box">
+            <i data-lucide="truck"></i>
+          </div>
+          <h3>Zero Caixinha de Transporte</h3>
+          <p>
+            Sem luta para colocar o gato na caixa, sem miados de pânico no carro e sem trânsito estressante.
+          </p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-icon-box">
+            <i data-lucide="volume-x"></i>
+          </div>
+          <h3>Sem Cães ou Odores Estranhos</h3>
+          <p>
+            Ambiente 100% livre do medo de outros animais latindo ou odores que disparam o cortisol felino.
+          </p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-icon-box">
+            <i data-lucide="activity"></i>
+          </div>
+          <h3>Avaliação Clínica Confiável</h3>
+          <p>
+            Pressão arterial, glicose e frequência cardíaca sem a alteração drástica do pico de adrenalina de viagens.
+          </p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-icon-box">
+            <i data-lucide="clock"></i>
+          </div>
+          <h3>Consulta Sem Pressa</h3>
+          <p>
+            Atenção exclusiva para observar o comportamento, caixa de areia, alimentação e rotina com calma.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nós: Dra. Gabriella & Giovana -->
+  <section class="section about-section" id="sobre">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Quem Somos</span>
+        <h2 class="section-title">Conheça a equipe por trás da FELIA</h2>
+        <p class="section-subtitle">
+          A união perfeita entre conhecimento médico veterinário especializado e assistência prática dedicada.
+        </p>
+      </div>
+
+      <div class="founders-grid">
+        <!-- Gabriella Paiva -->
+        <div class="founder-card">
+          <div class="founder-header">
+            <div class="founder-avatar-badge avatar-blue">
+              <i data-lucide="stethoscope"></i>
+            </div>
+            <div>
+              <span class="founder-role-tag">Responsável Técnica Veterinária</span>
+              <h3 class="founder-name">M.V. Gabriella Paiva</h3>
+              <p class="founder-title">Médica Veterinária Especializada em Felinos</p>
+            </div>
+          </div>
+          <div class="founder-body">
+            <p>
+              Dedicada exclusivamente à medicina felina, aplica o manejo <em>Cat Friendly</em> com foco no diagnóstico precoce, bem-estar comportamental e tratamentos humanizados sem contenções forçadas.
+            </p>
+            <ul class="founder-highlights">
+              <li><i data-lucide="check-circle-2"></i> Diagnóstico clínico individualizado</li>
+              <li><i data-lucide="check-circle-2"></i> Manejo gentil e redução de estresse</li>
+              <li><i data-lucide="check-circle-2"></i> Acompanhamento de doenças crônicas</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Giovana Madureira -->
+        <div class="founder-card">
+          <div class="founder-header">
+            <div class="founder-avatar-badge avatar-pink">
+              <i data-lucide="heart"></i>
+            </div>
+            <div>
+              <span class="founder-role-tag">Cuidado & Bem-Estar</span>
+              <h3 class="founder-name">Giovana Madureira</h3>
+              <p class="founder-title">Cat Sitter & Auxiliar Veterinária</p>
+            </div>
+          </div>
+          <div class="founder-body">
+            <p>
+              Com formação em auxílio veterinário e ampla experiência prática, cuida do seu gato em suas viagens com o diferencial de saber identificar sinais clínicos precoces e aplicar medicações com total segurança.
+            </p>
+            <ul class="founder-highlights">
+              <li><i data-lucide="check-circle-2"></i> Administração correta de medicações</li>
+              <li><i data-lucide="check-circle-2"></i> Relatórios diários com fotos e vídeos</li>
+              <li><i data-lucide="check-circle-2"></i> Brincadeiras e enriquecimento ambiental</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diferencial Parceria -->
+      <div class="partnership-card">
+        <div class="partnership-content">
+          <i data-lucide="sparkles" class="partnership-icon"></i>
+          <div>
+            <h4>Por que essa dupla é o melhor para o seu gato?</h4>
+            <p>
+              Se o seu gatinho precisar de medicação enquanto você viaja, você não depende de um cuidador leigo. Tem à disposição uma auxiliar técnica que conta com o respaldo direto da médica veterinária especializada!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossos Serviços (Com Filtros Mobile) -->
+  <section class="section services-section" id="servicos">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Cuidado Completo</span>
+        <h2 class="section-title">Nossos Serviços Domiciliares</h2>
+        <p class="section-subtitle">
+          Toque nas categorias abaixo para filtrar os serviços de acordo com sua necessidade:
+        </p>
+
+        <!-- Filtros Rápidos (Excelente UX no Mobile) -->
+        <div class="service-filters" id="serviceFilters">
+          <button type="button" class="filter-tab active" data-filter="all">Todos (8)</button>
+          <button type="button" class="filter-tab" data-filter="vet">🩺 Veterinária</button>
+          <button type="button" class="filter-tab" data-filter="sitter">🐱 Cat Sitter</button>
+          <button type="button" class="filter-tab" data-filter="care">💊 Cuidados & Exames</button>
+        </div>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        <!-- 1. Consulta Clínica -->
+        <div class="service-card" data-category="vet" data-service="Consulta Clínica">
+          <div class="service-icon-wrap">
+            <i data-lucide="stethoscope"></i>
+          </div>
+          <div class="service-body">
+            <h3>Consulta Clínica</h3>
+            <p>
+              Avaliação física minuciosa em domicílio: ausculta, palpação, mucosas, hidratação e orientações preventivas com a médica veterinária.
+            </p>
+            <span class="service-tag">Dra. Gabriella Paiva</span>
+          </div>
+          <button type="button" class="service-btn" onclick="selectServiceAndScroll('Consulta Clínica')">
+            Agendar Consulta &rarr;
+          </button>
+        </div>
+
+        <!-- 2. Cat Sitting Profissional (Destaque) -->
+        <div class="service-card featured-service" data-category="sitter" data-service="Cat Sitting Profissional">
+          <div class="featured-ribbon">Mais Procurado</div>
+          <div class="service-icon-wrap service-pink">
+            <i data-lucide="cat"></i>
+          </div>
+          <div class="service-body">
+            <h3>Cat Sitting com Olhar Clínico</h3>
+            <p>
+              Visitas de 45 a 60 min enquanto você viaja: caixinha limpa, água fresca, carinho, brincadeiras e fotos/vídeos a cada visita!
+            </p>
+            <span class="service-tag">Giovana Madureira</span>
+          </div>
+          <button type="button" class="service-btn" onclick="selectServiceAndScroll('Cat Sitting Profissional')">
+            Reservar Datas &rarr;
+          </button>
+        </div>
+
+        <!-- 3. Vacinação -->
+        <div class="service-card" data-category="vet" data-service="Vacinação Domiciliar">
+          <div class="service-icon-wrap">
+            <i data-lucide="syringe"></i>
+          </div>
+          <div class="service-body">
+            <h3>Vacinação Domiciliar</h3>
+            <p>
+              Vacinas éticas importadas (V3, V4, V5 e Antirrábica) com protocolos individualizados e técnica que não assusta o bichano.
+            </p>
+            <span class="service-tag">Proteção & Imunização</span>
+          </div>
+          <button type="button" class="service-btn" onclick="selectServiceAndScroll('Vacinação Domiciliar')">
+            Agendar Vacinas &rarr;
+          </button>
+        </div>
+
+        <!-- 4. Pacientes Crônicos -->
+        <div class="service-card" data-category="vet" data-service="Acompanhamento Crônicos">
+          <div class="service-icon-wrap">
+            <i data-lucide="activity-square"></i>
+          </div>
+          <div class="service-body">
+            <h3>Acompanhamento de Crônicos</h3>
+            <p>
+              Acompanhamento próximo para gatos com Doença Renal Crônica (DRC), diabetes, hipertensão e portadores de FIV e FeLV.
+            </p>
+            <span class="service-tag">Cuidado Contínuo</span>
+          </div>
+          <button type="button" class="service-btn" onclick="selectServiceAndScroll('Acompanhamento Crônicos')">
+            Solicitar Acompanhamento &rarr;
+          </button>
+        </div>
+
+        <!-- 5. Coleta de Exames -->
+        <div class="service-card" data-category="care" data-service="Coleta de Exames">
+          <div class="service-icon-wrap">
+            <i data-lucide="test-tube-2"></i>
+          </div>
+          <div class="service-body">
+            <h3>Coleta de Exames em Casa</h3>
+            <p>
+              Coleta de sangue, urina, fezes e citologia sem o estresse do ambiente clínico e com envio para laboratórios de referência.
+            </p>
+            <span class="service-tag">Agilidade & Conforto</span>
+          </div>
+          <button type="button" class="service-btn" onclick="selectServiceAndScroll('Coleta de Exames')">
+            Agendar Coleta &rarr;
+          </button>
+        </div>
+
+        <!-- 6. Administração Medicamentosa -->
+        <div class="service-card" data-category="care" data-service="Administração Medicamentosa">
+          <div class="service-icon-wrap">
+            <i data-lucide="pill"></i>
+          </div>
+          <div class="service-body">
+            <h3>Administração de Medicamentos</h3>
+            <p>
+              Aplicação de remédios orais, colírios, injeções subcutâneas e fluidoterapia domiciliar sem traumas para tutor e paciente.
+            </p>
+            <span class="service-tag">Manejo Especializado</span>
+          </div>
+          <button type="button" class="service-btn" onclick="selectServiceAndScroll('Administração Medicamentosa')">
+            Agendar Medicação &rarr;
+          </button>
+        </div>
+
+        <!-- 7. Medicina Preventiva -->
+        <div class="service-card" data-category="vet" data-service="Medicina Preventiva">
+          <div class="service-icon-wrap">
+            <i data-lucide="shield"></i>
+          </div>
+          <div class="service-body">
+            <h3>Medicina Preventiva & Check-up</h3>
+            <p>
+              Rastreamento de saúde periódico para identificar alterações precoces e garantir longevidade com qualidade de vida.
+            </p>
+            <span class="service-tag">Longevidade</span>
+          </div>
+          <button type="button" class="service-btn" onclick="selectServiceAndScroll('Medicina Preventiva')">
+            Agendar Check-up &rarr;
+          </button>
+        </div>
+
+        <!-- 8. Orientação para Tutores -->
+        <div class="service-card" data-category="sitter" data-service="Orientação para Tutores">
+          <div class="service-icon-wrap">
+            <i data-lucide="book-open-check"></i>
+          </div>
+          <div class="service-body">
+            <h3>Orientação & Consultoria</h3>
+            <p>
+              Enriquecimento ambiental, introdução de novos gatos na casa, ajustes na caixa de areia e redução de estresse na rotina.
+            </p>
+            <span class="service-tag">Educação Felina</span>
+          </div>
+          <button type="button" class="service-btn" onclick="selectServiceAndScroll('Orientação para Tutores')">
+            Agendar Consultoria &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regiões Atendidas (Foco Guarulhos & SP) -->
+  <section class="section regions-section" id="regioes">
+    <div class="container">
+      <div class="regions-wrapper">
+        <div class="regions-text">
+          <span class="section-eyebrow">Abrangência</span>
+          <h2 class="section-title">Onde atendemos com prioridade?</h2>
+          <p class="section-subtitle text-left">
+            Nossa base principal de atendimento é <strong>Guarulhos</strong> e regiões estratégicas de São Paulo:
+          </p>
+
+          <div class="regions-groups">
+            <div class="region-box">
+              <div class="region-title-box">
+                <i data-lucide="map-pin" class="region-pin"></i>
+                <h4>Guarulhos (Atendimento Principal)</h4>
+              </div>
+              <ul class="region-tags">
+                <li>Bosque Maia</li>
+                <li>Centro</li>
+                <li>Vila Augusta</li>
+                <li>Macedo</li>
+                <li>Vila Galvão</li>
+                <li>Gopoúva</li>
+                <li>Picanço</li>
+                <li>Jardim Maia</li>
+                <li>Cecap</li>
+                <li>Paraventi</li>
+                <li>Vila Rosália</li>
+                <li>Bomba</li>
+              </ul>
+            </div>
+
+            <div class="region-box">
+              <div class="region-title-box">
+                <i data-lucide="navigation" class="region-pin"></i>
+                <h4>São Paulo Capital & Adjacências</h4>
+              </div>
+              <ul class="region-tags">
+                <li>Zona Norte (Santana, Tucuruvi, Parada Inglesa, Tremembé)</li>
+                <li>Zona Leste (Tatuapé, Penha, Carrão)</li>
+                <li>Outras regiões sob consulta de rota</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="regions-card-side">
+          <div class="card-guarulhos-highlight">
+            <div class="highlight-badge">Atendimento Domiciliar</div>
+            <h3>Mora em Guarulhos ou SP?</h3>
+            <p>
+              Evite o estresse de tirar seu gato de casa. Chegamos até você com todo o equipamento veterinário estéril e materiais para o bem-estar dele.
+            </p>
+            <div class="quick-contact-box">
+              <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20se%20voc%C3%AAs%20atendem%20no%20meu%20bairro." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block btn-lg">
+                <i data-lucide="message-circle"></i>
+                Consultar Rota no WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Agendamento (Formulário Otimizado para Mobile) -->
+  <section class="section booking-section" id="agendamento">
+    <div class="container">
+      <div class="booking-wrapper">
+        
+        <div class="booking-intro">
+          <span class="section-eyebrow">Agendamento Fácil</span>
+          <h2 class="section-title text-left">Solicite seu Atendimento Domiciliar</h2>
+          <p class="section-subtitle text-left">
+            Preencha os dados em 1 minuto. Suas preferências são salvas e já geram o pré-agendamento sincronizado com o Google Calendar.
+          </p>
+
+          <div class="booking-perks">
+            <div class="booking-perk-item">
+              <i data-lucide="check-check" class="perk-icon"></i>
+              <div>
+                <strong>Retorno Rápido</strong>
+                <p>Respondemos prontamente no WhatsApp para confirmar o horário.</p>
+              </div>
+            </div>
+            <div class="booking-perk-item">
+              <i data-lucide="calendar" class="perk-icon"></i>
+              <div>
+                <strong>Agenda Integrada</strong>
+                <p>Horários alinhados diretamente na agenda das profissionais.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="direct-contact-card">
+            <h4>Prefere mandar mensagem direto?</h4>
+            <p>Converse diretamente pelo WhatsApp agora mesmo:</p>
+            <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento%20para%20o%20meu%20gato." target="_blank" rel="noopener noreferrer" class="btn btn-wa-full btn-block">
+              <i data-lucide="message-circle"></i> Abrir WhatsApp Oficial
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulário Mobile-First -->
+        <div class="booking-form-card">
+          <form id="leadForm" class="lead-form">
+            <h3 class="form-title">Ficha de Pré-Agendamento</h3>
+            <p class="form-desc">Leva menos de 1 minuto para preencher</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tutorName">Seu Nome *</label>
+                <div class="input-with-icon">
+                  <i data-lucide="user" class="input-icon"></i>
+                  <input type="text" id="tutorName" name="tutorName" placeholder="Ex: Maria da Silva" autocomplete="name" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="whatsapp">WhatsApp *</label>
+                <div class="input-with-icon">
+                  <i data-lucide="phone" class="input-icon"></i>
+                  <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 98765-4321" inputmode="tel" autocomplete="tel" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cidade">Cidade *</label>
+                <div class="input-with-icon">
+                  <i data-lucide="building" class="input-icon"></i>
+                  <select id="cidade" name="cidade" required>
+                    <option value="Guarulhos" selected>Guarulhos</option>
+                    <option value="São Paulo - Zona Norte">São Paulo - Zona Norte</option>
+                    <option value="São Paulo - Zona Leste">São Paulo - Zona Leste</option>
+                    <option value="São Paulo - Centro">São Paulo - Centro</option>
+                    <option value="Outra Região">Outra Região</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="bairro">Bairro *</label>
+                <div class="input-with-icon">
+                  <i data-lucide="map-pin" class="input-icon"></i>
+                  <input type="text" id="bairro" name="bairro" placeholder="Ex: Bosque Maia, Vila Augusta..." required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-divider"></div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="catName">Nome do(s) Gatinho(s) *</label>
+                <div class="input-with-icon">
+                  <i data-lucide="cat" class="input-icon"></i>
+                  <input type="text" id="catName" name="catName" placeholder="Ex: Mingau e Luna" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Serviço Desejado *</label>
+                <div class="input-with-icon">
+                  <i data-lucide="briefcase" class="input-icon"></i>
+                  <select id="service" name="service" required>
+                    <option value="" disabled selected>Selecione o serviço...</option>
+                    <option value="Consulta Clínica">Consulta Clínica Domiciliar</option>
+                    <option value="Cat Sitting Profissional">Cat Sitting Profissional (Viagem)</option>
+                    <option value="Vacinação Domiciliar">Vacinação Domiciliar</option>
+                    <option value="Medicina Preventiva / Check-up">Medicina Preventiva / Check-up</option>
+                    <option value="Acompanhamento Crônicos">Acompanhamento de Paciente Crônico</option>
+                    <option value="Coleta de Exames">Coleta de Exames Domiciliares</option>
+                    <option value="Administração Medicamentosa">Administração de Medicamentos</option>
+                    <option value="Orientação para Tutores">Orientação Comportamental / Manejo</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="preferredDate">Data Preferencial</label>
+                <div class="input-with-icon">
+                  <i data-lucide="calendar-days" class="input-icon"></i>
+                  <input type="date" id="preferredDate" name="preferredDate">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="preferredShift">Período de Preferência</label>
+                <div class="input-with-icon">
+                  <i data-lucide="clock" class="input-icon"></i>
+                  <select id="preferredShift" name="preferredShift">
+                    <option value="Manhã (08h às 12h)">Manhã (08h às 12h)</option>
+                    <option value="Tarde (13h às 18h)">Tarde (13h às 18h)</option>
+                    <option value="Fim de Semana">Fim de Semana (Sábado)</option>
+                    <option value="Qualquer horário">Qualquer horário disponível</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Observações / Motivo da Consulta ou Período da Viagem</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Ex: O gatinho é assustado; ou vou viajar de 15 a 20 e preciso de 1 visita por dia."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">
+              <i data-lucide="send" class="btn-icon"></i>
+              <span>Enviar Solicitação de Agendamento</span>
+            </button>
+
+            <p class="form-privacy">
+              <i data-lucide="lock" class="lock-icon"></i>
+              Seus dados estão protegidos e não serão compartilhados.
+            </p>
+          </form>
+
+          <!-- Mensagem de Sucesso (Exibida pós-envio) -->
+          <div id="formSuccessModal" class="success-message-box" style="display: none;">
+            <div class="success-icon-wrap">
+              <i data-lucide="check-circle" class="success-check-icon"></i>
+            </div>
+            <h3>Solicitação Recebida com Sucesso!</h3>
+            <p id="successSummary">Obrigado! Entraremos em contato com você em breve para confirmar a data e o horário.</p>
+            
+            <div class="success-action-btns">
+              <a id="waDirectSendBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-wa-full btn-block btn-lg">
+                <i data-lucide="message-circle" class="btn-icon"></i>
+                Confirmar Agora no WhatsApp
+              </a>
+              <button type="button" class="btn btn-outline btn-block mt-2" onclick="resetBookingForm()">
+                Fazer Outro Agendamento
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="section testimonials-section" id="depoimentos">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Depoimentos</span>
+        <h2 class="section-title">O que dizem os tutores que confiam na FELIA</h2>
+        <p class="section-subtitle">
+          Experiências reais de tutores de felinos em Guarulhos e São Paulo.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="test-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="test-text">
+            "Meu gato Fred tem pavor de entrar na caixinha de transporte, ele chegava a urinar de pânico no caminho da clínica. Com a Dra. Gabriella vindo em casa no Bosque Maia, foi outra vida! Ele foi atendido deitado na caminha dele, sem nenhum estresse!"
+          </p>
+          <div class="test-author">
+            <div class="author-avatar">CM</div>
+            <div>
+              <strong>Camila Martins</strong>
+              <span>Tutora do Fred (Bosque Maia - Guarulhos)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="test-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="test-text">
+            "A Giovana cuidou dos meus dois gatos enquanto viajei por 10 dias. O fato dela ser auxiliar veterinária me deu uma tranquilidade surreal. Recebia fotos, vídeos e relatório de cada visita. Quando cheguei, eles estavam super tranquilos e felizes!"
+          </p>
+          <div class="test-author">
+            <div class="author-avatar">RA</div>
+            <div>
+              <strong>Rodrigo Almeida</strong>
+              <span>Tutor da Pipoca e Oliver (Vila Augusta)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="test-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="test-text">
+            "Excelente atendimento! Fizeram a vacinação dos meus três gatinhos e a coleta de exames sem nenhum trauma. As meninas são super pontuais, atenciosas e o carinho com que tratam os felinos é evidente em cada gesto. Recomendo de olhos fechados!"
+          </p>
+          <div class="test-author">
+            <div class="author-avatar">BL</div>
+            <div>
+              <strong>Beatriz Lima</strong>
+              <span>Tutora do Tom, Nino e Maia (Santana - SP)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ / Dúvidas Frequentes -->
+  <section class="section faq-section" id="faq">
+    <div class="container faq-container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Dúvidas Frequentes</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <p class="section-subtitle">
+          Tire suas dúvidas rápidas sobre o atendimento domiciliar e o Cat Sitting:
+        </p>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button type="button" class="accordion-header" aria-expanded="false">
+            <span>Como funciona a consulta veterinária em domicílio?</span>
+            <i data-lucide="chevron-down" class="acc-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              A Dra. Gabriella vai até a sua residência no horário combinado, levando todos os equipamentos necessários esterilizados (estetoscópio, termômetro, balança digital, medicamentos de primeiros socorros, materiais de coleta). A consulta inicia com uma conversa acolhedora com o tutor enquanto o gato se acostuma com a presença da profissional, realizando o exame físico no próprio ambiente do animal.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-header" aria-expanded="false">
+            <span>E se o meu gato for arisco ou tiver medo de desconhecidos?</span>
+            <i data-lucide="chevron-down" class="acc-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              Somos especializadas no manejo <em>Cat Friendly</em>. Não utilizamos força física nem contenções brutas. Respeitamos o tempo do felino, utilizamos técnicas de dessensibilização, feromônios sintéticos (como Feliway) quando indicado, e movimentos suaves para que o animal se sinta seguro e relaxado.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-header" aria-expanded="false">
+            <span>Qual a diferença entre um Cat Sitter comum e a Giovana?</span>
+            <i data-lucide="chevron-down" class="acc-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              A Giovana possui formação como Auxiliar Veterinária. Isso significa que, além de alimentar, higienizar a caixinha e brincar, ela tem preparo técnico para administrar medicamentos prescritos (orais, injetáveis, pomadas) e reconhecer alterações precoces de comportamento, apetite ou sinais clínicos que um cuidador leigo não notaria.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-header" aria-expanded="false">
+            <span>Quais regiões vocês cobrem com prioridade?</span>
+            <i data-lucide="chevron-down" class="acc-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              Nosso atendimento principal cobre todos os bairros de Guarulhos (Bosque Maia, Centro, Vila Augusta, Macedo, Vila Galvão, Gopoúva, Picanço, Cecap, etc.) e bairros das Zonas Norte e Leste de São Paulo (Santana, Tucuruvi, Penha, Tatuapé). Outras regiões podem ser consultadas diretamente pelo WhatsApp.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-header" aria-expanded="false">
+            <span>Quais as formas de pagamento aceitas?</span>
+            <i data-lucide="chevron-down" class="acc-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              Aceitamos Pix, cartões de crédito e débito e transferência bancária. Para pacotes contínuos de acompanhamento ou períodos mais longos de Cat Sitting, temos condições facilitadas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Final -->
+  <section class="section final-cta-section">
+    <div class="container text-center">
+      <div class="final-cta-card">
+        <h2 class="final-cta-title">Proporcione ao seu gato o cuidado veterinário que ele merece</h2>
+        <p class="final-cta-desc">
+          Agende hoje mesmo uma visita em Guarulhos ou São Paulo. Vagas semanais limitadas para garantir a dedicação máxima a cada atendimento.
+        </p>
+        <div class="final-cta-buttons">
+          <a href="#agendamento" class="btn btn-primary btn-lg btn-block-sm">
+            <i data-lucide="calendar"></i>
+            Agendar Atendimento Domiciliar
+          </a>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20o%20atendimento%20para%20o%20meu%20gato!" target="_blank" rel="noopener noreferrer" class="btn btn-wa-full btn-lg btn-block-sm">
+            <i data-lucide="message-circle"></i>
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <img src="assets/logo-transparent.png" alt="FELIA Medicina Felina" class="footer-logo">
+        <p class="footer-bio">
+          Cuidado domiciliar especializado em felinos e cat sitting profissional com acolhimento, respeito e amor incondicional em Guarulhos e Grande São Paulo.
+        </p>
+        <div class="footer-social">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Felia" class="social-icon">
+            <i data-lucide="instagram"></i>
+          </a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Felia" class="social-icon">
+            <i data-lucide="message-circle"></i>
+          </a>
+          <a href="mailto:feliaspetcare@gmail.com" aria-label="Email da Felia" class="social-icon">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Serviços</h4>
+        <ul class="footer-links">
+          <li><a href="#servicos">Consulta Clínica Domiciliar</a></li>
+          <li><a href="#servicos">Cat Sitting com Olhar Clínico</a></li>
+          <li><a href="#servicos">Vacinação Domiciliar</a></li>
+          <li><a href="#servicos">Medicina Preventiva & Check-up</a></li>
+          <li><a href="#servicos">Acompanhamento de Crônicos</a></li>
+          <li><a href="#servicos">Administração Medicamentosa</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Contato & Regiões</h4>
+        <div class="footer-contact-items">
+          <div class="f-contact">
+            <i data-lucide="map-pin"></i>
+            <span>Guarulhos & Região Metropolitana de SP</span>
+          </div>
+          <div class="f-contact">
+            <i data-lucide="phone"></i>
+            <span>(11) 99999-9999</span>
+          </div>
+          <div class="f-contact">
+            <i data-lucide="mail"></i>
+            <span>feliaspetcare@gmail.com</span>
+          </div>
+          <div class="f-contact">
+            <i data-lucide="clock"></i>
+            <span>Seg a Sáb &bull; 08h às 19h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 FELIA Medicina Felina & Pet Care. Todos os direitos reservados.</p>
+        <p class="crmv-notice">Dra. Gabriella Paiva (CRMV) &bull; Giovana Madureira</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY BOTTOM ACTION BAR (Exclusivo para conversão máxima no Mobile) -->
+  <div class="mobile-sticky-bar" id="mobileStickyBar">
+    <div class="sticky-bar-inner">
+      <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20FELIA%20e%20gostaria%20de%20um%20agendamento." target="_blank" rel="noopener noreferrer" class="sticky-btn sticky-btn-wa">
+        <i data-lucide="message-circle" class="sticky-icon"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="#agendamento" class="sticky-btn sticky-btn-agendar">
+        <i data-lucide="calendar" class="sticky-icon"></i>
+        <span>Agendar Visita</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

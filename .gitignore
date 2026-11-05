@@ -1,0 +1,11 @@
+# Logs e arquivos temporários
+__pycache__/
+*.pyc
+*.ps1
+test*
+check*
+delays*
+
+# Gravações muito pesadas (caso queira subir só o site leve para produção)
+# gravacao-desktop.gif
+# gravacao-mobile.gif
