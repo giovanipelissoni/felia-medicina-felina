@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravações de Navegação - FELIA Medicina Felina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAF9F6;
+      --pink: #FFDDE5;
+      --rose: #D9829B;
+      --petrol: #28536B;
+      --petrol-dark: #1C3D50;
+      --dark: #1E293B;
+      --muted: #64748B;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--dark);
+      padding: 2.5rem 1.5rem;
+      line-height: 1.6;
+    }
+    .header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 3rem auto;
+    }
+    .logo-img {
+      max-height: 70px;
+      margin: 0 auto 1rem auto;
+      display: block;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--pink);
+      color: var(--petrol);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.25rem 0.8rem;
+      border-radius: 999px;
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      color: var(--petrol);
+      margin-bottom: 0.5rem;
+    }
+    p.lead {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      max-width: 1300px;
+      margin: 0 auto;
+      align-items: start;
+    }
+    @media (min-width: 1024px) {
+      .grid {
+        grid-template-columns: 1.35fr 0.85fr;
+      }
+    }
+    .card {
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(40, 83, 107, 0.08);
+      border: 1px solid rgba(217, 130, 155, 0.25);
+    }
+    .card-title-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .card-title-bar h2 {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--petrol);
+      font-size: 1.8rem;
+    }
+    .format-pill {
+      font-size: 0.75rem;
+      background: rgba(40, 83, 107, 0.08);
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+      font-weight: 600;
+      color: var(--petrol);
+    }
+    /* Frame mockups */
+    .desktop-frame {
+      border: 8px solid #2B3A42;
+      border-radius: 12px;
+      background: #000;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+    .desktop-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .mobile-frame-wrap {
+      display: flex;
+      justify-content: center;
+    }
+    .mobile-frame {
+      width: 100%;
+      max-width: 340px;
+      border: 10px solid #1E293B;
+      border-radius: 36px;
+      background: #000;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+      position: relative;
+    }
+    .mobile-notch {
+      width: 100px;
+      height: 16px;
+      background: #1E293B;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+    .mobile-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card-actions {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--petrol);
+      color: #FFFFFF;
+    }
+    .btn-primary:hover {
+      background: var(--petrol-dark);
+      transform: translateY(-2px);
+    }
+    .btn-secondary {
+      background: var(--pink);
+      color: var(--petrol);
+    }
+    .btn-secondary:hover {
+      background: #F8CAD4;
+    }
+    .features-list {
+      margin-top: 1.25rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .features-list li::before {
+      content: "✓ ";
+      color: var(--rose);
+      font-weight: bold;
+    }
+    .nav-site-box {
+      text-align: center;
+      margin-top: 3.5rem;
+      padding: 2rem;
+      background: #FFFFFF;
+      border-radius: 16px;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid var(--pink);
+    }
+    .nav-site-box h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      color: var(--petrol);
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="assets/logo-transparent.png" alt="FELIA Logo" class="logo-img">
+    <span class="badge">Demonstração Visual</span>
+    <h1>Gravações de Navegação do Website</h1>
+    <p class="lead">
+      Arquivos animados em alta resolução para enviar à <strong>Giovana</strong> e à <strong>Gabriella</strong> no WhatsApp ou visualizar em qualquer dispositivo.
+    </p>
+  </div>
+
+  <div class="grid">
+    <!-- Desktop Recording -->
+    <div class="card">
+      <div class="card-title-bar">
+        <h2>💻 Navegação Desktop</h2>
+        <span class="format-pill">GIF Animado &bull; 768x432 (16:9)</span>
+      </div>
+
+      <div class="desktop-frame">
+        <img src="gravacao-desktop.gif" alt="Gravação da navegação desktop do site FELIA">
+      </div>
+
+      <ul class="features-list">
+        <li>Apresenta Hero com logo, botões e cartões de credenciais</li>
+        <li>Passa por diferenciais Cat Friendly e perfil da Dra. Gabriella e Giovana</li>
+        <li>Exibe os 8 serviços domiciliares, mapa de Guarulhos e formulário de lead</li>
+      </ul>
+
+      <div class="card-actions">
+        <a href="gravacao-desktop.gif" download="felia-gravacao-desktop.gif" class="btn btn-primary">
+          ⬇ Baixar GIF Desktop (10 MB)
+        </a>
+        <a href="index.html" target="_blank" class="btn btn-secondary">
+          🌐 Abrir Site Ao Vivo
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile Recording -->
+    <div class="card">
+      <div class="card-title-bar">
+        <h2>📱 Navegação Mobile (Celular)</h2>
+        <span class="format-pill">GIF Animado &bull; 320x620 (Vertical)</span>
+      </div>
+
+      <div class="mobile-frame-wrap">
+        <div class="mobile-frame">
+          <div class="mobile-notch"></div>
+          <img src="gravacao-mobile.gif" alt="Gravação da navegação mobile do site FELIA no celular">
+        </div>
+      </div>
+
+      <ul class="features-list">
+        <li>Visualização idêntica à tela de um smartphone</li>
+        <li>Botões largos de toque fácil para WhatsApp e agendamento</li>
+        <li>Tamanho otimizado para envio rápido no WhatsApp</li>
+      </ul>
+
+      <div class="card-actions" style="justify-content: center;">
+        <a href="gravacao-mobile.gif" download="felia-gravacao-mobile.gif" class="btn btn-primary">
+          ⬇ Baixar GIF Mobile (8.7 MB)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-site-box">
+    <h3>Quer navegar você mesmo no site completo?</h3>
+    <p style="color: var(--muted); margin-bottom: 1.25rem; font-size: 0.95rem;">
+      O site é totalmente interativo: você pode testar o preenchimento da ficha de agendamento, o botão do WhatsApp e o acordeão de dúvidas.
+    </p>
+    <a href="index.html" class="btn btn-primary" style="font-size: 1rem; padding: 0.85rem 2rem;">
+      Acessar o Website FELIA Completo &rarr;
+    </a>
+  </div>
+
+</body>
+</html>
